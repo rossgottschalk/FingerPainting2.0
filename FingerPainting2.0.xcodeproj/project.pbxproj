@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B9C32F91D70D284003F2112 /* Painting+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C32F71D70D284003F2112 /* Painting+CoreDataProperties.swift */; };
+		5B9C32FA1D70D284003F2112 /* Painting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C32F81D70D284003F2112 /* Painting.swift */; };
 		5BE7D23E1D70899500DFF8F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7D23D1D70899500DFF8F4 /* AppDelegate.swift */; };
-		5BE7D2401D70899500DFF8F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7D23F1D70899500DFF8F4 /* ViewController.swift */; };
+		5BE7D2401D70899500DFF8F4 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7D23F1D70899500DFF8F4 /* CanvasViewController.swift */; };
 		5BE7D2431D70899500DFF8F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7D2411D70899500DFF8F4 /* Main.storyboard */; };
 		5BE7D2461D70899500DFF8F4 /* FingerPainting2_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7D2441D70899500DFF8F4 /* FingerPainting2_0.xcdatamodeld */; };
 		5BE7D2481D70899500DFF8F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7D2471D70899500DFF8F4 /* Assets.xcassets */; };
 		5BE7D24B1D70899500DFF8F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE7D2491D70899500DFF8F4 /* LaunchScreen.storyboard */; };
+		5BE7D2731D70956E00DFF8F4 /* SavedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7D2721D70956E00DFF8F4 /* SavedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B9C32F71D70D284003F2112 /* Painting+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Painting+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5B9C32F81D70D284003F2112 /* Painting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Painting.swift; sourceTree = "<group>"; };
 		5BE7D23A1D70899500DFF8F4 /* FingerPainting2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerPainting2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE7D23D1D70899500DFF8F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5BE7D23F1D70899500DFF8F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BE7D23F1D70899500DFF8F4 /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 		5BE7D2421D70899500DFF8F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BE7D2451D70899500DFF8F4 /* FingerPainting2_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FingerPainting2_0.xcdatamodel; sourceTree = "<group>"; };
 		5BE7D2471D70899500DFF8F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BE7D24A1D70899500DFF8F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BE7D24C1D70899500DFF8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE7D2721D70956E00DFF8F4 /* SavedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,8 @@
 		5BE7D2311D70899500DFF8F4 = {
 			isa = PBXGroup;
 			children = (
+				5B9C32F71D70D284003F2112 /* Painting+CoreDataProperties.swift */,
+				5B9C32F81D70D284003F2112 /* Painting.swift */,
 				5BE7D23C1D70899500DFF8F4 /* FingerPainting2.0 */,
 				5BE7D23B1D70899500DFF8F4 /* Products */,
 			);
@@ -57,8 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				5BE7D23D1D70899500DFF8F4 /* AppDelegate.swift */,
-				5BE7D23F1D70899500DFF8F4 /* ViewController.swift */,
 				5BE7D2411D70899500DFF8F4 /* Main.storyboard */,
+				5BE7D23F1D70899500DFF8F4 /* CanvasViewController.swift */,
+				5BE7D2721D70956E00DFF8F4 /* SavedTableViewController.swift */,
 				5BE7D2471D70899500DFF8F4 /* Assets.xcassets */,
 				5BE7D2491D70899500DFF8F4 /* LaunchScreen.storyboard */,
 				5BE7D24C1D70899500DFF8F4 /* Info.plist */,
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BE7D2401D70899500DFF8F4 /* ViewController.swift in Sources */,
+				5B9C32F91D70D284003F2112 /* Painting+CoreDataProperties.swift in Sources */,
+				5BE7D2401D70899500DFF8F4 /* CanvasViewController.swift in Sources */,
 				5BE7D2461D70899500DFF8F4 /* FingerPainting2_0.xcdatamodeld in Sources */,
+				5B9C32FA1D70D284003F2112 /* Painting.swift in Sources */,
 				5BE7D23E1D70899500DFF8F4 /* AppDelegate.swift in Sources */,
+				5BE7D2731D70956E00DFF8F4 /* SavedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +302,7 @@
 				5BE7D2511D70899500DFF8F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
