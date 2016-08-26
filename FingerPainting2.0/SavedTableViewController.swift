@@ -17,8 +17,8 @@ class SavedTableViewController: UITableViewController
     
     @IBAction func addName(sender: AnyObject)
     {
-        let alert = UIAlertController(title: "New Name",
-                                      message: "Add a new name",
+        let alert = UIAlertController(title: "Add Title",
+                                      message: "Add a title to your painting",
                                       preferredStyle: .Alert)
         
 //        let saveAction = UIAlertAction(title: "Save",
@@ -158,12 +158,23 @@ class SavedTableViewController: UITableViewController
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete
         {
-            let commit = paintings[indexPath.row]
-            NSManagedObjectContext.delete(commit)
+            let appDelegate =
+                UIApplication.sharedApplication().delegate as! AppDelegate
+            let managedContext = appDelegate.managedObjectContext
+            
+            let paintingToDelete = paintings[indexPath.row]
             paintings.removeAtIndex(indexPath.row)
+            managedContext.deleteObject(paintingToDelete)
             // Delete the row from the data source
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-            //saveContext() *************^^^^^^^^^^^**^*^**^*^*^*^
+            do
+            {
+                try managedContext.save()
+            } catch
+            {
+                let error = error as NSError
+                print("Could not save to Core Data: \(error.localizedDescription)")
+            }
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
