@@ -13,11 +13,14 @@ class SavedTableViewController: UITableViewController
 {
     @IBOutlet weak var savedTableView: UITableView!
     
+        var paintings = [NSManagedObject]()
+    
+    
     @IBAction func donePressed(sender: UIBarButtonItem)
     {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    var paintings = [NSManagedObject]()
+
     
 //    @IBAction func addName(sender: AnyObject)
 //    {
@@ -131,11 +134,14 @@ class SavedTableViewController: UITableViewController
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("savedCells", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("savedCells", forIndexPath: indexPath) as! CustomCell
 
         let painting = paintings[indexPath.row]
         
-        cell.textLabel?.text = painting.valueForKey("name") as? String
+        cell.nameLabel?.text = painting.valueForKey("name") as? String
+        let imageData = painting.valueForKey("paintingImage") as? NSData
+        let aPaintingImage = UIImage(data: imageData!)
+        cell.paintingImage.image = aPaintingImage
         
         return cell
     }
@@ -156,6 +162,8 @@ class SavedTableViewController: UITableViewController
         
         //3
         person.setValue(name, forKey: "name")
+    
+
         
         //4
         do {

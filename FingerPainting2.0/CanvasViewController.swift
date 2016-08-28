@@ -69,6 +69,16 @@ class CanvasViewController: UIViewController
         canvas.image = newImage
     }
     
+    func createImage() -> UIImage
+    {
+        UIGraphicsBeginImageContext(self.view.bounds.size)
+        view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let viewImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return viewImage
+    }
+
+    
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
 //    {
 //        if segue.identifier == "SavePaintingSegue"

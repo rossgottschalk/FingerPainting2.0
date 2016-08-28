@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B6710C31D73929F00852D5A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6710C21D73929F00852D5A /* CustomCell.swift */; };
 		5B9C32F91D70D284003F2112 /* Painting+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C32F71D70D284003F2112 /* Painting+CoreDataProperties.swift */; };
 		5B9C32FA1D70D284003F2112 /* Painting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C32F81D70D284003F2112 /* Painting.swift */; };
 		5BE7D23E1D70899500DFF8F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7D23D1D70899500DFF8F4 /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B6710C21D73929F00852D5A /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		5B9C32F71D70D284003F2112 /* Painting+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Painting+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5B9C32F81D70D284003F2112 /* Painting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Painting.swift; sourceTree = "<group>"; };
 		5BE7D23A1D70899500DFF8F4 /* FingerPainting2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerPainting2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 				5BE7D2411D70899500DFF8F4 /* Main.storyboard */,
 				5BE7D23F1D70899500DFF8F4 /* CanvasViewController.swift */,
 				5BE7D2721D70956E00DFF8F4 /* SavedTableViewController.swift */,
+				5B6710C21D73929F00852D5A /* CustomCell.swift */,
 				5BE7D2471D70899500DFF8F4 /* Assets.xcassets */,
 				5BE7D2491D70899500DFF8F4 /* LaunchScreen.storyboard */,
 				5BE7D24C1D70899500DFF8F4 /* Info.plist */,
@@ -152,6 +155,7 @@
 				5BE7D2461D70899500DFF8F4 /* FingerPainting2_0.xcdatamodeld in Sources */,
 				5B9C32FA1D70D284003F2112 /* Painting.swift in Sources */,
 				5BE7D23E1D70899500DFF8F4 /* AppDelegate.swift in Sources */,
+				5B6710C31D73929F00852D5A /* CustomCell.swift in Sources */,
 				5BE7D2731D70956E00DFF8F4 /* SavedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
