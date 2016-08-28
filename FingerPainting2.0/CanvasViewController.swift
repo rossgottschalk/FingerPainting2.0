@@ -68,5 +68,15 @@ class CanvasViewController: UIViewController
         // set the UIImageView's image to the new, generated image
         canvas.image = newImage
     }
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+//    {
+//        if segue.identifier == "SavePaintingSegue"
+//        {
+//            let savedTVC = segue.destinationViewController as! SavedTableViewController
+//            
+//            
+//        }
+//    }
 }
 

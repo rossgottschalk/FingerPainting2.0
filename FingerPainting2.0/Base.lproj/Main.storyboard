@@ -45,7 +45,7 @@
                     <navigationItem key="navigationItem" id="Vc8-S8-buK">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="T1Z-Ye-T0F">
                             <connections>
-                                <segue destination="NK4-xO-0M0" kind="showDetail" identifier="SavePaintingSegue" id="XC0-Vg-3MD"/>
+                                <segue destination="NK4-xO-0M0" kind="show" identifier="SavePaintingSegue" action="showDetailViewController:sender:" id="XC0-Vg-3MD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -90,6 +90,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="xBV-hE-g1X">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="96O-uJ-EBX">
+                            <connections>
+                                <action selector="donePressed:" destination="b48-Wf-tYs" id="gkW-wo-UAe"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="3JD-ea-GtE">
                             <connections>
                                 <action selector="addName:" destination="b48-Wf-tYs" id="u4t-NS-Del"/>

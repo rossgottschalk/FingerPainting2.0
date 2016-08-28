@@ -13,21 +13,76 @@ class SavedTableViewController: UITableViewController
 {
     @IBOutlet weak var savedTableView: UITableView!
     
+    @IBAction func donePressed(sender: UIBarButtonItem)
+    {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     var paintings = [NSManagedObject]()
     
-    @IBAction func addName(sender: AnyObject)
-    {
-        let alert = UIAlertController(title: "Add Title",
-                                      message: "Add a title to your painting",
-                                      preferredStyle: .Alert)
-        
+//    @IBAction func addName(sender: AnyObject)
+//    {
+//        let alert = UIAlertController(title: "Add Title",
+//                                      message: "Add a title to your painting",
+//                                      preferredStyle: .Alert)
+//        
+////        let saveAction = UIAlertAction(title: "Save",
+////                                       style: .Default,
+////                                       handler: { (action:UIAlertAction) -> Void in
+////                                        
+////                                        let textField = alert.textFields!.first
+////                                        self.paintings.append(textField!.text!)
+////                                        self.tableView.reloadData()
 //        let saveAction = UIAlertAction(title: "Save",
 //                                       style: .Default,
 //                                       handler: { (action:UIAlertAction) -> Void in
 //                                        
 //                                        let textField = alert.textFields!.first
-//                                        self.paintings.append(textField!.text!)
+//                                        self.saveName(textField!.text!)
 //                                        self.tableView.reloadData()
+//        })
+//        
+//        let cancelAction = UIAlertAction(title: "Cancel",
+//                                         style: .Default) { (action: UIAlertAction) -> Void in
+//        }
+//        
+//        alert.addTextFieldWithConfigurationHandler {
+//            (textField: UITextField) -> Void in
+//        }
+//        
+//        alert.addAction(saveAction)
+//        alert.addAction(cancelAction)
+//        
+//        presentViewController(alert,
+//                              animated: true,
+//                              completion: nil)
+//    }
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        addName()
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    func addName()
+    {
+        let alert = UIAlertController(title: "Add Title",
+                                      message: "Add a title to your painting",
+                                      preferredStyle: .Alert)
+        
+        //        let saveAction = UIAlertAction(title: "Save",
+        //                                       style: .Default,
+        //                                       handler: { (action:UIAlertAction) -> Void in
+        //
+        //                                        let textField = alert.textFields!.first
+        //                                        self.paintings.append(textField!.text!)
+        //                                        self.tableView.reloadData()
         let saveAction = UIAlertAction(title: "Save",
                                        style: .Default,
                                        handler: { (action:UIAlertAction) -> Void in
@@ -52,18 +107,7 @@ class SavedTableViewController: UITableViewController
                               animated: true,
                               completion: nil)
     }
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
